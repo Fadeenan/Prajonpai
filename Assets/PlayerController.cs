@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         float hDirection = Input.GetAxis("Horizontal");
+
         if (hDirection < 0)
         {
             rb.velocity = new Vector2(-5, rb.velocity.y);
